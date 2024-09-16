@@ -9,6 +9,9 @@ occurrences = my_string.count("o")
 # find the index of a specific character 
 character_index = my_string.index("o")
 
+# include 
+is_in_the_string = my_string.include?("World")
+
 # remove trailing whitespaces
 trimmed_string = my_string.strip
 
