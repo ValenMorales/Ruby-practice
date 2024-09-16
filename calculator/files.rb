@@ -2,7 +2,7 @@ require_relative "operate"
 
 # read file content and make calculator operations 
 
-File.open("manual_data.txt", "r") do |file|
+File.open("manual_data.txt", "r+") do |file|
   for line in file.readlines()
     data = line.split(" ")
     num1 = data[0].to_f
