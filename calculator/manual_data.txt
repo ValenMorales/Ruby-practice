@@ -1,0 +1,4 @@
+2 add 1 
+2 power 3 
+4 multiply 5
+10 divide 1

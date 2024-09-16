@@ -17,8 +17,17 @@ def add(a, b)
     a / b
   end
   
+  #def power(a, b)
+  #  a ** b
+  #end
+
+  # power function manually, to use for loop 
   def power(a, b)
-    a ** b
+    result = 1
+    b.to_i.times do
+      result *= a
+    end
+    result
   end
   
   def modulo(a, b)

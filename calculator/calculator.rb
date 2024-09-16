@@ -1,4 +1,5 @@
 require_relative "methods"
+require_relative "operate"
 
 puts "Welcome to the basic calculator"
 
@@ -15,15 +16,7 @@ loop do
     operation = gets.chomp.downcase
     break if operation == "exit"
 
-    if operation == "square_root"
-    result = evaluate_selection(operation, num1)
-    else
-    result = evaluate_selection(operation, num1, num2)
-    end
-
-    puts "The result is: #{result}"
+    make_operation(num1,num2, operation)
 end 
 
 puts "Bye!"
-
-    
