@@ -1,4 +1,4 @@
-# using string functions 
+# using string functions
 
 my_string = "Hello, World!"
 uppercase_string = my_string.upcase
@@ -6,10 +6,10 @@ lowercase_string = my_string.downcase
 reversed_string = my_string.reverse
 occurrences = my_string.count("o")
 
-# find the index of a specific character 
+# find the index of a specific character
 character_index = my_string.index("o")
 
-# include 
+# include
 is_in_the_string = my_string.include?("World")
 
 # remove trailing whitespaces
@@ -29,10 +29,10 @@ puts "Occurrences of 'o': #{occurrences}"
 
 my_number = 123.456
 
-# round up 
+# round up
 rounded_up_number = my_number.ceil
 
-# round down 
+# round down
 rounded_down_number = my_number.floor
 
 integer_part = my_number.to_i

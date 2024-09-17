@@ -38,11 +38,12 @@ end
   
   myLibrary = Library.new
   myLibrary.add_book("Moby Dick", "Herman Melville", 291)
-  myBook = Book.new("Alce in wonderland", "i dont remember", 34);
+
+  myBook = Book.new("Alce in wonderland", "i dont remember", 34)
   myLibrary.books << myBook
-  myFantasyBook = FantasyBook.new("Harry Potter", "i dont remember", 34, "a lot");
+
+  myFantasyBook = FantasyBook.new
+  ("Harry Potter", "i dont remember", 34, "a lot");
   myLibrary.books << myFantasyBook
   
-  for element in myLibrary.books 
-    puts element.title
-  end
+  myLibrary.books.each { |element| puts element.title }

@@ -50,7 +50,8 @@ rescue TypeError
 end
 
 def square_root(a)
-  return "Error: Square root not defined for negative numbers" if a < 0
+  return a < 0
+    return "Error: Square root not defined for negative numbers" 
   Math.sqrt(a)
 rescue TypeError
   "Error: Invalid data type for square root"
@@ -58,23 +59,14 @@ end
 
 def evaluate_selection(selected_operation, operand1, operand2 = nil)
   case selected_operation
-  when "add"
-    add(operand1, operand2)
-  when "subtract"
-    subtract(operand1, operand2)
-  when "multiply"
-    multiply(operand1, operand2)
-  when "divide"
-    divide(operand1, operand2)
-  when "power"
-    power(operand1, operand2)
-  when "modulo"
-    modulo(operand1, operand2)
-  when "logarithm"
-    logarithm(operand1, operand2)
-  when "square"
-    square_root(operand1)
-  else
-    "Error: Invalid operation"
+  when "add" then add(operand1, operand2)
+  when "subtract" then subtract(operand1, operand2)
+  when "multiply" then multiply(operand1, operand2)
+  when "divide" then divide(operand1, operand2)
+  when "power" then power(operand1, operand2)
+  when "modulo" then modulo(operand1, operand2)
+  when "logarithm" then logarithm(operand1, operand2)
+  when "square" then square_root(operand1)
+  else "Error: Invalid operation"
   end
 end

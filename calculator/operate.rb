@@ -1,10 +1,10 @@
 require_relative "methods"
 
 def make_operation(num1, num2, operation)
+    result =
     if operation == "square_root"
-        result = evaluate_selection(operation, num1)
+        evaluate_selection(operation, num1)
     else
-        result = evaluate_selection(operation, num1, num2)
-    end
+        evaluate_selection(operation, num1, num2)
     puts "The result is: #{result}"
 end

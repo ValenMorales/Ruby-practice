@@ -26,7 +26,5 @@ print(max_element)
 sorted_array = sorted(my_array)
 print(sorted_array)
 
-
 reversed_array = list(reversed(my_array))
 print(reversed_array)
-
