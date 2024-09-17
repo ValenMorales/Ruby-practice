@@ -9,7 +9,7 @@ class Book
       @pages = pages
     end
 
-  end
+end
   
   class Library
     attr_reader :books 
@@ -46,5 +46,3 @@ class Book
   for element in myLibrary.books 
     puts element.title
   end
-  
-  
