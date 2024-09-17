@@ -29,4 +29,3 @@ print(sorted_array)
 
 reversed_array = list(reversed(my_array))
 print(reversed_array)
-

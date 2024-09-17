@@ -21,4 +21,3 @@ puts my_info["city"]
 
 puts my_info.include?("name") 
 puts my_info.size  
-
