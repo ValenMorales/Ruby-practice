@@ -11,9 +11,7 @@ loop do
 
     break if input_num1.downcase == "exit"
 
-    raise TypeError, "Invalid input for the first number"
-
-    unless input_num1.match?(/^\d*\.?\d+$/)
+    raise TypeError, "Invalid input for the first number" unless input_num1.match?(/^\d*\.?\d+$/)
     num1 = input_num1.to_f
 
     puts

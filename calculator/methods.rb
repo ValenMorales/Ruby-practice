@@ -22,7 +22,6 @@ def divide(a, b)
   # When performing float-division on two integers, either use "\
   # fdiv or convert one-side integer to float.
   a.fdiv(b)
-
 rescue TypeError
   "Error: Invalid data type for division"
 end
@@ -52,8 +51,8 @@ rescue TypeError
 end
 
 def square_root(a)
-  return a < 0
-    return "Error: Square root not defined for negative numbers" 
+  return "Error: Square root not defined for negative numbers" if a < 0
+
   Math.sqrt(a)
 rescue TypeError
   "Error: Invalid data type for square root"
