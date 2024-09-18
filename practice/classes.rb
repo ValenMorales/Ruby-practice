@@ -8,7 +8,6 @@ class Book
       @author = author
       @pages = pages
     end
-
 end
   
   class Library

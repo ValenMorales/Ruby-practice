@@ -21,3 +21,6 @@ puts my_info["city"]
 
 puts my_info.include?("name")
 puts my_info.size
+
+my_info.each_key { |k| puts k }
+hash.each_value { |v| puts v }

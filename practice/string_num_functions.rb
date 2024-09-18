@@ -37,8 +37,10 @@ rounded_down_number = my_number.floor
 
 integer_part = my_number.to_i
 
+# Always supply a proper to_s method for classes that "\
+# represent domain objects.
+number_string = "#{my_number}"
 # sort
-number_string = my_number.to_s
 sorted_number_string = number_string.chars.sort.join
 
 puts "Original number: #{my_number}"

@@ -22,7 +22,7 @@ print(min_element)
 max_element = max(my_array)
 print(max_element)
 
-#sort the array in ascending order
+# sort the array in ascending order
 sorted_array = sorted(my_array)
 print(sorted_array)
 

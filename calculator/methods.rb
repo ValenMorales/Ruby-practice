@@ -1,5 +1,3 @@
-# calculator.rb
-
 def add(a, b)
   a + b
 rescue TypeError
@@ -20,7 +18,11 @@ end
 
 def divide(a, b)
   return "Error: Division by zero is not valid" if b == 0
-  a / b
+
+  # When performing float-division on two integers, either use "\
+  # fdiv or convert one-side integer to float.
+  a.fdiv(b)
+
 rescue TypeError
   "Error: Invalid data type for division"
 end
