@@ -5,5 +5,5 @@ for i in 0..5
 end
 
 6.times do |i|
-    puts " #{i}"
+  puts " #{i}"
 end
